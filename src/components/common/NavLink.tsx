@@ -5,18 +5,28 @@ type NavLink = {
   href: string;
 };
 
-const NavLinks = () => {
+type NavLinksProps = {
+  mobile?: boolean;
+};
+
+export default function NavLinks({ mobile = false }: NavLinksProps) {
   const links: NavLink[] = [
+    { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "News", href: "/news" },
     { label: "Projects", href: "/projects" },
     { label: "Industries", href: "/industries" },
   ];
 
   return (
-    <ul className="hidden lg:flex items-center">
+    <ul
+      className={
+        mobile
+          ? "flex flex-col gap-5"
+          : "hidden lg:flex items-center"
+      }
+    >
       {links.map(({ label, href }) => (
         <li key={label}>
           <Link
@@ -29,6 +39,4 @@ const NavLinks = () => {
       ))}
     </ul>
   );
-};
-
-export default NavLinks;
+}
