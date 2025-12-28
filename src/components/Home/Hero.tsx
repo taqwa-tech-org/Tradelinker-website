@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroImg from "../../../public/Hvac.jpg";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -21,12 +22,10 @@ export default function Hero() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
 
       {/* Centered Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
         <div className="w-full max-w-7xl mx-auto px-4 xl:px-0">
-          
           {/* Glass Card */}
           <div
             className="
@@ -38,58 +37,48 @@ export default function Hero() {
               shadow-2xl
             "
           >
-            <p
-              className="
-                inline-block px-3 py-px mb-4
-                text-xs font-semibold tracking-wider
-                text-white uppercase
-                rounded-full bg-white/20
-              "
-            >
-              New Collaboration
-            </p>
-
             <h1
               className="
-                mb-6 font-sans
-                text-4xl sm:text-5xl
+                 font-sans
+                 p-2 text-2xl
                 font-bold tracking-tight
                 text-white leading-tight
               "
             >
-              The quick, brown fox <br />
-              jumps over{" "}
-              <span className="text-indigo-300">
-                a lazy dog
-              </span>
+              Energy-efficient heating, ventilation, and air-conditioning
+              systems designed for comfort, performance, and long-term
+              reliability.
             </h1>
-
-            <button className="group relative inline-block text-sm font-medium text-white">
-              <span
-                className="
+            <Link href={"/contact"}>
+              <button
+                className="group relative inline-block text-sm font-medium text-white bg-primary
+                  hover:bg-primary-hover"
+              >
+                <span
+                  className="
                   absolute inset-0
                   translate-x-0.5 translate-y-0.5
-                  bg-indigo-600
+                  
                   transition-transform
                   group-hover:translate-x-0
                   group-hover:translate-y-0
                 "
-              ></span>
+                ></span>
 
-              <span
-                className="
+                <span
+                  className="
                   relative block
                   border border-white
                   bg-transparent
                   px-8 py-3
                   rounded-lg
                 "
-              >
-                Download
-              </span>
-            </button>
+                >
+                  Request a Consultation
+                </span>
+              </button>
+            </Link>
           </div>
-
         </div>
       </div>
     </section>

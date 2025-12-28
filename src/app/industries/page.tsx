@@ -1,7 +1,10 @@
+import FoodAgroIndustry from "./Components/FoodAgroIndustry"
+
+
 export default function industries (){
     return (
-        <div>
-             THis is industries page 
+        <div className="">
+             <FoodAgroIndustry/>
         </div>
     )
 }
