@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <header className="sticky top-0 z-50  w-full py-3 min-h-[72px] md:min-h-[88px] lg:min-h-[96px] relative bg-white">
+      <header className="sticky top-0 z-50 bg-transparent w-full py-3 min-h-[72px] md:min-h-[88px] lg:min-h-[96px] relative bg-white">
         <div className="max-w-7xl mx-auto px-4 xl:px-0">
           <div className="rounded-2xl flex items-center justify-between px-5 py-2.5 shadow-lg border border-white/30">
             
