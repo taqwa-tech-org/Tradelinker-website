@@ -37,7 +37,7 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
               hover:bg-gray-100 hover:translate-x-2
               ${
                 isActive(item.href)
-                  ? "text-[#47b8ab] bg-[#47b8ab] font-semibold"
+                  ? "text-[#47b8ab]  font-semibold"
                   : "text-[#47b8ab] hover:text-[#47b8ab]"
               }
             `}
