@@ -11,32 +11,32 @@ type NavLinksProps = {
 
 export default function NavLinks({ mobile = false }: NavLinksProps) {
   const links: NavLink[] = [
-    { label: "Home", href: "/" },
+    {label: "Home", href: "/"},
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "News", href: "/news" },
     { label: "Projects", href: "/projects" },
     { label: "Industries", href: "/industries" },
   ];
 
   return (
-    <ul
-      className={
+    <nav
+      className={`${
         mobile
-          ? "flex flex-col gap-5"
-          : "hidden lg:flex items-center"
-      }
+          ? "flex flex-col space-y-6"
+          : "flex items-center space-x-8"
+      }`}
     >
-      {links.map(({ label, href }) => (
-        <li key={label}>
-          <Link
-            href={href}
-            className="px-3 py-2 text-sm font-medium text-neutral-700 transition hover:text-neutral-600"
-          >
-            {label}
-          </Link>
-        </li>
+      {links.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          className="text-gray-800 font-medium hover:text-green-700 transition"
+        >
+          {link.label}
+        </Link>
       ))}
-    </ul>
+    </nav>
   );
 }
