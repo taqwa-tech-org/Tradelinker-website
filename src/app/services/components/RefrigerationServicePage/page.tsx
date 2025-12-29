@@ -4,9 +4,9 @@ import refigerator from "@/public/images/services/refrigarator.jpg";
 
 export default function RefrigerationServicePage() {
   return (
-   <main className="w-full">
+   <main className="">
         {/* Overview */}
-      <section className="py-16">
+      <section className="py-10">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-semibold mb-4">
             Reliable Refrigeration Solutions
@@ -20,10 +20,10 @@ export default function RefrigerationServicePage() {
       </section>
 
 
-      <section className="relative w-full py-20 bg-primary text-white">
+      <section className="relative w-full p-10 md:p-20 lg:p-21 bg-primary text-white rounded-xl">
 
       {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div className=" px-4 grid md:grid-cols-2 gap-10 items-center">
           {/* Image from public/services/hvac.jpg */}
           <div className="relative w-full h-64 md:h-80 lg:h-80">
             <Image

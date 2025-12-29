@@ -4,10 +4,10 @@ import IndustrialImg from "@/public/images/services/construction.jpg";
 
 export default function IndustrialConstructionPage() {
   return (
-    <main className="w-full">
+    <main className="">
       
       {/* Overview */}
-      <section className="py-16">
+      <section className="py-10">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-semibold mb-4">
             Industrial Construction Excellence
@@ -21,8 +21,8 @@ export default function IndustrialConstructionPage() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative w-full py-20 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <section className="relative w-full p-10 md:p-20 lg:p-21 bg-primary text-white rounded-xl">
+        <div className=" px-4 grid md:grid-cols-2 gap-10 items-center">
           
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">

@@ -13,12 +13,11 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
   const links: NavLink[] = [
     {label: "Home", href: "/"},
     { label: "Services", href: "/services" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
-    
     { label: "Projects", href: "/projects" },
     { label: "Industries", href: "/industries" },
-  ];
+    { label: "Contact", href: "/contact" },
+    { label: "About", href: "/about" },
+    ];
 
   return (
     <nav

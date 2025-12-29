@@ -6,12 +6,12 @@ import MachineryEquipmentSupplyPage from "./components/MachineryEquipmentSupplyP
 
 export default function services (){
     return (
-        <div>
+        <div className="sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-6xl mx-auto pb-8 md:pb-13 lg:pb-15">
              <HVACServicePage/>
              <RefrigerationServicePage/>
              <IndustrialConstructionPage/>
              <TurnkeyProjectManagementPage/>
-             <MachineryEquipmentSupplyPage/>
+             <MachineryEquipmentSupplyPage/>     
         </div>
     )
 }
