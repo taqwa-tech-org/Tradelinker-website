@@ -15,7 +15,7 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "News", href: "/news" },
+    
     { label: "Projects", href: "/projects" },
     { label: "Industries", href: "/industries" },
   ];
