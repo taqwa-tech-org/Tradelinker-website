@@ -6,7 +6,7 @@ import MachineryEquipmentSupplyPage from "./components/MachineryEquipmentSupplyP
 
 export default function services (){
     return (
-        <div className="sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-6xl mx-auto pb-8 md:pb-13 lg:pb-15">
+        <div className="max-w-7xl md:px-10 px-2 pb-12 mx-auto">
              <HVACServicePage/>
              <RefrigerationServicePage/>
              <IndustrialConstructionPage/>

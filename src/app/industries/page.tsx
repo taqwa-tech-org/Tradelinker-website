@@ -5,7 +5,7 @@ import FishMeatProcessingSection from "./Components/FishMeatProcessingSection"
 
 export default function industries (){
     return (
-        <div className="sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-6xl mx-auto">
+        <div className="max-w-7xl md:px-10 px-2 pb-12 mx-auto">
              <FoodAgroIndustry/>
              <DairyIndustrySection/>
              <ColdStorageSection/>

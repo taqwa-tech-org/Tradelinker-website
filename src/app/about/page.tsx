@@ -1,4 +1,4 @@
-import AboutHero from "./components/AboutHero"
+import CompanyHistoryVision from "./components/CompanyHistoryVision"
 import CompanyOverview from "./components/CompanyOverview"
 import VissionMission from "./components/VissionMission"
 import CoreValues from "./components/CoreValues"
@@ -9,8 +9,8 @@ import Services from "./components/Services"
 
 export default function about (){
     return (
-        <div>
-             <AboutHero/>
+        <div className="">
+             <CompanyHistoryVision/>
              <CompanyOverview/>
              <VissionMission/>
              <CoreValues/>
