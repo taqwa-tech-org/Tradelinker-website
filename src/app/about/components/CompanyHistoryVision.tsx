@@ -1,7 +1,21 @@
-'use client'
+'use client';
+
+interface ValueCard {
+  icon: string;
+  title: string;
+  desc: string;
+}
+
 export default function CompanyHistoryVision() {
+  const valueCards: ValueCard[] = [
+    { icon: '🎯', title: 'Client Satisfaction', desc: 'Complete solutions' },
+    { icon: '⚡', title: 'Cost Effective', desc: 'Best value services' },
+    { icon: '🏆', title: 'Quality Driven', desc: 'Highest standards' },
+    { icon: '🤝', title: 'Trust & Reliability', desc: 'Built on integrity' }
+  ];
+
   return (
-    <section className="py-10 md:py-15 lg:py-15 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-white to-pearl-aqua-50">
+    <section className="py-20 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-white to-pearl-aqua-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -108,12 +122,7 @@ export default function CompanyHistoryVision() {
               {/* Icon Grid - Left Side */}
               <div className="md:w-1/2 ml-20 md:ml-0 md:pr-16">
                 <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { icon: '🎯', title: 'Client Satisfaction', desc: 'Complete solutions' },
-                    { icon: '⚡', title: 'Cost Effective', desc: 'Best value services' },
-                    { icon: '🏆', title: 'Quality Driven', desc: 'Highest standards' },
-                    { icon: '🤝', title: 'Trust & Reliability', desc: 'Built on integrity' }
-                  ].map((item, idx) => (
+                  {valueCards.map((item, idx) => (
                     <div 
                       key={idx} 
                       className="bg-white rounded-xl shadow-md p-5 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-pearl-aqua-100"
@@ -132,16 +141,6 @@ export default function CompanyHistoryVision() {
         </div>
       </div>
 
-      {/* <style jsx>{`
-        .pearl-aqua-50 { background-color: #edf8f7; }
-        .pearl-aqua-100 { background-color: #daf1ee; }
-        .pearl-aqua-300 { background-color: #91d4cc; }
-        .pearl-aqua-600 { background-color: #399388; }
-        .pearl-aqua-800 { background-color: #1d4944; }
-        .bg-primary { background-color: #399388; }
-        .text-primary { color: #399388; }
-        .border-primary { border-color: #399388; }
-      `}</style> */}
     </section>
   );
 }
