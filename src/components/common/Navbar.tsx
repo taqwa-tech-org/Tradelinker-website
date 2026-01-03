@@ -19,7 +19,7 @@ export default function Navbar() {
             <Logo />
 
             {/* Desktop Nav */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:block mr-6">
               <NavLinks />
             </div>
 

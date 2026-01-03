@@ -1,21 +1,21 @@
-import Logo from "./Logo";
+// import Logo from "./Logo";
 import Link from "next/link";
 
 export default function Footer() {
   const industries = [
-    { name: "Cold Storage", href: "/industries/cold-storage" },
-    { name: "Dairy & Ice Cream Plants", href: "/industries/dairy" },
-    { name: "Seafood Processing", href: "/industries/seafood" },
-    { name: "Meat Processing", href: "/industries/meat" },
-    { name: "Grain Handling & Silos", href: "/industries/grain" },
+    { name: "Cold Storage", href: "/industries" },
+    { name: "Dairy & Ice Cream Plants", href: "/industries" },
+    { name: "Seafood Processing", href: "/industries" },
+    { name: "Meat Processing", href: "/industries" },
+    { name: "Grain Handling & Silos", href: "/industries" },
   ];
 
   const services = [
-    { name: "Architectural & MEP Design", href: "/services/design" },
-    { name: "Construction & Steel Buildings", href: "/services/construction" },
-    { name: "Plant Machinery Supply", href: "/services/machinery" },
-    { name: "Installation & Commissioning", href: "/services/installation" },
-    { name: "After Sales Service", href: "/services/support" },
+    { name: "HVAC Systems", href: "/services" },
+    { name: "Refrigeration Systems", href: "/services" },
+    { name: "Industrial Construction", href: "/services" },
+    { name: "Turnkey Project Management", href: "/services" },
+    { name: "Machinery & Equipment Supply", href: "/services" },
   ];
 
   const company = [
@@ -33,9 +33,9 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="mb-4">
+            {/* <div className="mb-4 text-center flex">
               <Logo />
-            </div>
+            </div> */}
             <h3 className="text-xl font-bold mb-3">Tradelinkers Engineering Ltd</h3>
             <p className="text-pearl-aqua-200 text-sm leading-relaxed mb-6">
               Full-service multidisciplinary engineering and contracting company with over 40 years of expertise.
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
 
           {/* Industries */}
-          <div>
+          <div className="hidden md:block">
             <h4 className="text-lg font-bold mb-4 text-pearl-aqua-100">Industries</h4>
             <ul className="space-y-2">
               {industries.map((item, index) => (
@@ -86,7 +86,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
+           
           {/* Services */}
           <div>
             <h4 className="text-lg font-bold mb-4 text-pearl-aqua-100">Services</h4>
@@ -155,20 +155,22 @@ export default function Footer() {
               </div>
             </div>
           </div>
+
+           
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-pearl-aqua-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-pearl-aqua-300">
+          <div className="text-center flex-col md:flex-row  gap-4 text-sm text-pearl-aqua-300">
             <p>© 2025 Tradelinkers Engineering Ltd. All rights reserved.</p>
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <Link href="/privacy" className="hover:text-pearl-aqua-100 transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="hover:text-pearl-aqua-100 transition-colors">
                 Terms of Service
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

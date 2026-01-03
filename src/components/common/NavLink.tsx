@@ -7,12 +7,11 @@ interface NavLinksProps {
 }
 
 const navItems = [
-   { label:"Home" , href: '/'} ,
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-    { label: "Projects", href: "/projects" },
-    { label: "Industries", href: "/industries" },
-    { label: "Contact", href: "/contact" },
-    { label: "About", href: "/about" },
+  { label: "Industries", href: "/industries" },
+  { label: "Contact", href: "/contact" },
+  { label: "About", href: "/about" },
 ];
 
 export default function NavLinks({ mobile = false }: NavLinksProps) {
@@ -56,12 +55,12 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
           key={item.href}
           href={item.href}
           className={`
-            relative text-base font-medium transition-all duration-300 py-2
+            relative text-base font-semibold transition-all duration-300 py-2
             hover:text-[#47b8ab]
             ${
               isActive(item.href)
                 ? "text-[#47b8ab]  "
-                  : "text-black hover:text-[#47b8ab]"
+                : "text-black  hover:text-[#47b8ab]"
             }
             group
           `}
@@ -71,11 +70,7 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
           <span
             className={`
               absolute left-0 bottom-0 h-0.5 bg-[#47b8ab] transition-all duration-300
-              ${
-                isActive(item.href)
-                  ? "w-full"
-                  : "w-0 group-hover:w-full"
-              }
+              ${isActive(item.href) ? "w-full" : "w-0 group-hover:w-full"}
             `}
           />
         </Link>
