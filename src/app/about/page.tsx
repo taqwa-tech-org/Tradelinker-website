@@ -1,7 +1,17 @@
+import CompanyHistoryVision from "./components/CompanyHistoryVision"
+import MissionValues from "./components/MissionValues"
+ 
+
+
+
 export default function about (){
     return (
-        <div>
-             about page  
+        <div className="">
+             <CompanyHistoryVision/>
+             <MissionValues/>
+             
         </div>
-    )
-}
+             
+            )
+        }
+           
