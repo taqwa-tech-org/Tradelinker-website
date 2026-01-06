@@ -1,9 +1,10 @@
 "use client";
-
 import { useState } from "react";
-import Logo from "./Logo";
+import logo from "@/public/images/logo/logo.png"
+// import Logo from "./Logo";
 import NavLinks from "./NavLink";
 import { HiMenu, HiX } from "react-icons/hi";
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -16,8 +17,8 @@ export default function Navbar() {
           <div className="rounded-2xl flex items-center justify-between px-5 py-2.5 shadow-lg border border-white/30">
             
             {/* Logo */}
-            <Logo />
-
+            {/* <Logo /> */}
+            <Image src={logo} alt="company logo" height={1500} width={150}/>
             {/* Desktop Nav */}
             <div className="hidden lg:block mr-6">
               <NavLinks />
