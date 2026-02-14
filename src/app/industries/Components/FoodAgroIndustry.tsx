@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FoodImg from "@/public/images/Industry/food .jpg";
+import FoodImg from "@/public/images/Industry/food.webp";
 
 export const metadata = {
   title: "Food & Agro Industry Solutions",
