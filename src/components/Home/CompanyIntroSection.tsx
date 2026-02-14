@@ -1,22 +1,29 @@
+import {
+BrushCleaning,
+  Building2,
+  Settings,
+  Headphones
+} from "lucide-react";
+
 export default function CompanyIntroSection() {
   const capabilities = [
     {
-      number: "01",
+      icon: BrushCleaning,
       title: "Design & Engineering",
       description: "Architectural, structural, and MEP design for complete facility planning"
     },
     {
-      number: "02",
+      icon: Building2,
       title: "Construction & Supply",
       description: "Civil works, steel buildings, and plant machinery procurement"
     },
     {
-      number: "03",
+      icon: Settings,
       title: "Installation & Commissioning",
       description: "Professional erection, testing, and system activation services"
     },
     {
-      number: "04",
+      icon: Headphones,
       title: "After Sales Support",
       description: "Ongoing technical assistance and maintenance programs"
     }
@@ -120,12 +127,28 @@ export default function CompanyIntroSection() {
               ].map((industry, idx) => (
                 <div 
                   key={idx}
-                  className="py-3 px-4 rounded-lg bg-white border border-pearl-aqua-200 text-sm font-medium text-gray-700 hover:border-pearl-aqua-600 hover:text-pearl-aqua-700 transition-colors"
+                  className="group p-8 rounded-xl bg-white border border-blue-100 hover:border-blue-400 hover:shadow-md transition-all duration-300"
                 >
-                  {industry}
+                  <div className="flex items-start gap-5">
+                    
+                    {/* Icon Box */}
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                      <Icon size={24} />
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+
+                  </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </div> */}
           </div>
