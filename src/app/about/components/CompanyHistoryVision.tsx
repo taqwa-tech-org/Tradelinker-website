@@ -39,18 +39,18 @@ export default function CompanyHistoryVision() {
               {/* Content */}
               <div className="md:w-1/2 ml-20 md:ml-0 md:pr-16 md:text-right">
                 <div className="inline-block bg-pearl-aqua-100 text-pearl-aqua-800 px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                  Since 1980
+                  Since 1970's
                 </div>
                 <h3 className="text-3xl font-bold text-foreground mb-4">
                   Our Journey
                 </h3>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Founded in 1980 as <strong>Tradelinkers Corporation Ltd</strong>, 
-                    we embarked on a mission to transform Bangladesh engineering landscape.
+                    Founded in 1970's as <strong>Tradelinkers Corporation Ltd</strong>, 
+                    we embarked on a mission to transform Bangladesh Industrial landscape.
                   </p>
                   <p>
-                    Over <strong>four decades</strong>, we have evolved into a full-service 
+                    Over <strong>five decades</strong>, we have evolved into a full-service 
                     multidisciplinary engineering and contracting powerhouse, completing 
                     <strong> over 400 projects</strong> across diverse sectors.
                   </p>
@@ -103,8 +103,8 @@ export default function CompanyHistoryVision() {
                 </h3>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    We aspire to become a <strong>regional leader</strong> in our industries, 
-                    offering clients complete satisfaction through the best value and most 
+                    We aspire to become a <strong>market leader</strong> in our industries, 
+                    offering our clients with complete satisfaction through best value and 
                     cost-effective services.
                   </p>
                   <p>

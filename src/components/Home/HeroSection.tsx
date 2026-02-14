@@ -18,7 +18,7 @@ export default function HeroSection() {
               <svg className="w-4 h-4 md:w-5 md:h-5 text-pearl-aqua-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-              <span className="text-xs md:text-sm font-semibold">Since 1980 • 40+ Years of Excellence</span>
+              <span className="text-xs md:text-sm font-semibold">Since 1970's • 50+ Years of Excellence</span>
             </div>
 
             {/* Main Heading */}
@@ -31,7 +31,7 @@ export default function HeroSection() {
             {/* Subheading */}
             <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed mb-6 md:mb-10 max-w-xl">
               Full-service multidisciplinary engineering and contracting company delivering 
-              <strong> complete turnkey solutions</strong> from planning to commissioning.
+              <strong> complete turnkey solutions</strong> from planning to handover.
             </p>
 
             {/* CTAs */}

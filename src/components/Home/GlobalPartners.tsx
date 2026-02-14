@@ -32,10 +32,10 @@ const GlobalPartners: React.FC = () => {
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          Our Clients
+          Our Partners
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Trusted by leading companies worldwide to deliver exceptional results and drive innovation across industries.
+          Trusted by leading companies worldwide to partner & deliver exceptional results and drive innovation across industries.
         </p>
       </div>
 
