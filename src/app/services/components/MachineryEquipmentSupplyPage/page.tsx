@@ -30,7 +30,7 @@ export default function MachineryEquipmentSupplyPage() {
               Machinery & Equipment Supply
             </h1>
 
-            <p className="text-blue-700 mb-6">
+            <p className="text-black mb-6">
               End-to-end supply solutions for industrial machinery and equipment,
               supporting installation, integration, and reliable site
               operations.

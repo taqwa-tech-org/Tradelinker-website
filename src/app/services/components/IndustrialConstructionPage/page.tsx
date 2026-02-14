@@ -30,7 +30,7 @@ export default function IndustrialConstructionPage() {
               Industrial Construction
             </h1>
 
-            <p className="text-blue-700 mb-6">
+            <p className="text-black mb-6">
               End-to-end construction services for industrial projects, from
               planning and civil works to structural development and site
               execution.

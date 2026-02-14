@@ -29,7 +29,7 @@ export default function HVACServicePage() {
               HVAC Solutions
             </h1>
 
-            <p className="text-blue-700 mb-6">
+            <p className="text-black mb-6">
               Efficient heating, ventilation, and air conditioning solutions
               for industrial and commercial facilities.
             </p>

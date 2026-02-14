@@ -41,7 +41,7 @@ export default function RefrigerationServicePage() {
               Refrigeration Systems
             </h1>
 
-            <p className="text-blue-700 mb-6">
+            <p className="text-black mb-6">
               Advanced refrigeration solutions designed to maintain precise
               temperature control, efficiency, and reliability for industrial and
               commercial environments.

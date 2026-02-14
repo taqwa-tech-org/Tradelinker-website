@@ -41,7 +41,7 @@ export default function TurnkeyProjectManagementPage() {
               Turnkey Project Management
             </h1>
 
-            <p className="text-blue-700 mb-6">
+            <p className="text-black mb-6">
               From planning and design to execution and handover, we ensure
               seamless coordination, cost control, and on-time delivery of
               complex industrial projects.
