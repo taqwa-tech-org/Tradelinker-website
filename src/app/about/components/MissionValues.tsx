@@ -61,7 +61,7 @@ export default function MissionValues() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
         </svg>
       ),
       title: 'People Development',
@@ -78,105 +78,89 @@ export default function MissionValues() {
   return (
     <section className="py-20 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
+
+        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
             Mission & Values
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
 
-        {/* Mission Statement */}
+        {/* Mission Card */}
         <div className="mb-20">
-          <div className="relative">
-            {/* Decorative Background */}
-            <div className="absolute inset-0 bg-pearl-aqua-50 rounded-3xl transform -rotate-1"></div>
-            <div className="absolute inset-0 bg-pearl-aqua-100 rounded-3xl transform rotate-1"></div>
-            
-            {/* Content Card */}
-            <div className="relative bg-gradient-to-br from-primary to-pearl-aqua-700 rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 text-white">
-              <div className="flex items-start gap-6 mb-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-bold mb-2">Our Mission</h3>
-                  <div className="w-20 h-1 bg-white bg-opacity-50"></div>
-                </div>
-              </div>
-              
-              <div className="space-y-4 text-lg md:text-xl leading-relaxed text-white text-opacity-95">
-                <p>
-                  To become a <strong>regional leader</strong> in our industries, offering clients 
-                  complete satisfaction and delivering the best value and most cost-effective services 
-                  based on quality, reliability, and trust.
-                </p>
-                <p className="text-base md:text-lg text-white text-opacity-90 italic border-l-4 border-white border-opacity-40 pl-6 mt-6">
-                  We aim to be a world-class engineering and contracting company providing efficient, 
-                  affordable, sustainable & cost-effective services of the highest level of quality.
-                </p>
-              </div>
+          <div className="bg-blue-100 rounded-3xl shadow-lg p-8 md:p-12 text-blue-900">
 
-              {/* Stats Row */}
-              <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-white border-opacity-20">
-                {stats.map((stat, idx) => (
-                  <div key={idx} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-white mb-1">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm md:text-base text-white text-opacity-80">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">
+              Our Mission
+            </h3>
+
+            <div className="space-y-4 text-lg leading-relaxed text-black">
+              <p>
+                To become a <strong>regional leader</strong> in our industries,
+                offering clients complete satisfaction and delivering the best
+                value and most cost-effective services based on quality,
+                reliability, and trust.
+              </p>
+
+              <p className="italic border-l-4 border-blue-400 pl-6">
+                We aim to be a world-class engineering and contracting company
+                providing efficient, affordable, sustainable & cost-effective
+                services of the highest level of quality.
+              </p>
             </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-blue-200">
+              {stats.map((stat, idx) => (
+                <div key={idx} className="text-center">
+                  <div className="text-3xl font-bold text-blue-900">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm text-blue-700">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
 
         {/* Core Values */}
-        <div>
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-              Our Core Values
-            </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              The principles that guide every decision we make and every project we deliver
-            </p>
-          </div>
-
-          {/* Values Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coreValues.map((value, idx) => (
-              <div 
-                key={idx}
-                className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 border-2 border-pearl-aqua-100 hover:border-primary hover:-translate-y-2"
-              >
-                {/* Icon */}
-                <div className="w-16 h-16 bg-pearl-aqua-100 group-hover:bg-primary rounded-xl flex items-center justify-center text-primary group-hover:text-white transition-all duration-300 mb-5">
-                  {value.icon}
-                </div>
-
-                {/* Title */}
-                <h4 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                  {value.title}
-                </h4>
-
-                {/* Description */}
-                <p className="text-gray-600 leading-relaxed">
-                  {value.description}
-                </p>
-
-                {/* Decorative Element */}
-                <div className="mt-6 w-12 h-1 bg-pearl-aqua-200 group-hover:bg-primary group-hover:w-full transition-all duration-300"></div>
-              </div>
-            ))}
-          </div>
+        <div className="text-center mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold text-blue-900 mb-3">
+            Our Core Values
+          </h3>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            The principles that guide every decision we make and every project we deliver
+          </p>
         </div>
-      </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {coreValues.map((value, idx) => (
+            <div
+              key={idx}
+              className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-blue-100 hover:-translate-y-1"
+            >
+              <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white">
+                {value.icon}
+              </div>
+
+              <h4 className="text-xl font-bold text-blue-900 mb-3">
+                {value.title}
+              </h4>
+
+              <p className="text-gray-600 leading-relaxed">
+                {value.description}
+              </p>
+
+              <div className="mt-6 w-12 h-1 bg-blue-300 group-hover:bg-blue-600 group-hover:w-full transition-all duration-300"></div>
+            </div>
+          ))}
+        </div>
+
+      </div>
     </section>
   );
 }
