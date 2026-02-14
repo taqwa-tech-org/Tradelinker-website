@@ -31,11 +31,11 @@ const GlobalPartners: React.FC = () => {
     <div className="w-full py-18 md:py-16 lg:py-25 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-          Our Clients
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          Our Partners
         </h2>
-        <p className="text-lg md:text-2xl text-gray-600 max-w-2xl mx-auto">
-          Trusted by leading companies worldwide to deliver exceptional results and drive innovation across industries.
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          Trusted by leading companies worldwide to partner & deliver exceptional results and drive innovation across industries.
         </p>
       </div>
 
