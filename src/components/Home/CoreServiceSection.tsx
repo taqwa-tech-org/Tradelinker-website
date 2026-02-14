@@ -88,15 +88,21 @@ export default function CoreServicesSection() {
   });
 
   return (
-    <section className="py-20 md:py-24 bg-gradient-to-br from-pearl-aqua-600 via-pearl-aqua-400 to-pearl-aqua-500 overflow-hidden">
-      <div className="container mx-auto px-5 md:px-10">
+    <section className="py-20 md:py-24 bg-gradient-to-br from-blue-600 via-blue-200 to-cyan-700 overflow-hidden relative">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000" />
+      </div>
+
+      <div className="container mx-auto px-5 md:px-10 relative z-10">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
             Core Services
           </h2>
-          <div className="w-24 h-1 bg-pearl-aqua-400 mx-auto mb-6" />
-          <p className="text-lg text-pearl-aqua-100 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-white/80 mx-auto mb-6 rounded-full" />
+          <p className="text-lg text-blue-50 max-w-3xl mx-auto drop-shadow-md">
             Comprehensive engineering solutions from concept to completion
           </p>
         </div>
@@ -111,7 +117,7 @@ export default function CoreServicesSection() {
             {loopServices.map((service, idx) => (
               <div
                 key={idx}
-                className="w-[340px] md:w-[380px] flex-shrink-0 bg-white rounded-2xl shadow-xl overflow-hidden"
+                className="w-[340px] md:w-[380px] flex-shrink-0 bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative h-48">
                   <Image
@@ -120,14 +126,14 @@ export default function CoreServicesSection() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute top-4 left-4 w-14 h-14 bg-white rounded-xl flex items-center justify-center text-pearl-aqua-700 shadow-lg">
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-900/20 to-transparent" />
+                  <div className="absolute top-4 left-4 w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white shadow-lg transform hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
