@@ -115,7 +115,7 @@ export default function MissionValues() {
                 </p>
                 <p className="text-base md:text-lg text-white text-opacity-90 italic border-l-4 border-white border-opacity-40 pl-6 mt-6">
                   We aim to be a world-class engineering and contracting company providing efficient, 
-                  affordable, sustainable, cost-effective services of the highest level of quality.
+                  affordable, sustainable & cost-effective services of the highest level of quality.
                 </p>
               </div>
 
