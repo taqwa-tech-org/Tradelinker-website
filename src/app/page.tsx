@@ -13,7 +13,7 @@ export default function Home() {
  <Herosection/>
  <CompanyIntroSection/>
  <CompanyHistoryVision/>
- <MissionValues/>
+ {/* <MissionValues/> */}
  <CoreServiceSection/>
  <GlobalPartners/>
  <CTASection/>
