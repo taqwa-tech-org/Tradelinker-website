@@ -77,7 +77,7 @@ export default function contact (){
                     </label>
                     <button
                         type="button"
-                        className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-primary hover:bg-primary-hover"
+                        className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-blue-500 text-white"
                     >
                         Submit
                     </button>

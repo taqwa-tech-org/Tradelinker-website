@@ -8,9 +8,9 @@ export default function services (){
     return (
         <div className="max-w-7xl md:px-10 px-2 pb-12 mx-auto">
              <HVACServicePage/>
-             <RefrigerationServicePage/>
-             <IndustrialConstructionPage/>
              <TurnkeyProjectManagementPage/>
+             <IndustrialConstructionPage/>
+             <RefrigerationServicePage/>
              <MachineryEquipmentSupplyPage/>     
         </div>
     )

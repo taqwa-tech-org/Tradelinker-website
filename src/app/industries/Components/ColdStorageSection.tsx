@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ThermometerSnowflake } from "lucide-react";
 import type { ReactNode } from "react";
-import coldstroageImg from "@/public/images/Industry/Cold storage .jpg";
+import coldstroageImg from "@/public/images/Industry/coldRoom.webp";
 
 type Feature = {
   icon: ReactNode;
@@ -107,11 +107,7 @@ export default function ColdStorageSection() {
               className="rounded-xl object-cover shadow-xl"
             />
             
-            {/* Decorative Corner Badge */}
-            <div className="absolute -top-4 -right-4 bg-pearl-aqua-500 text-white px-5 py-3 rounded-xl shadow-xl font-bold text-sm">
-              <div className="text-2xl mb-1">40+</div>
-              <div className="text-xs opacity-90">Years Expertise</div>
-            </div>
+           
           </div>
         </div>
       </div>
