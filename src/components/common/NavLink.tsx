@@ -36,8 +36,8 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
               hover:bg-gray-100 hover:translate-x-2
               ${
                 isActive(item.href)
-                  ? "text-[#47b8ab]  font-semibold"
-                  : "text-[#47b8ab] hover:text-[#47b8ab]"
+                  ? "text-blue-300  font-semibold"
+                  : "text-blue-300 hover:text-blue-500"
               }
             `}
           >
@@ -56,11 +56,11 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
           href={item.href}
           className={`
             relative text-base font-semibold transition-all duration-300 py-2
-            hover:text-[#47b8ab]
+            hover:text-blue-600
             ${
               isActive(item.href)
-                ? "text-[#47b8ab]  "
-                : "text-black  hover:text-[#47b8ab]"
+                ? "text-blue-400  "
+                : "text-black  hover:text-blue-500"
             }
             group
           `}
@@ -69,7 +69,7 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
           {/* Animated underline */}
           <span
             className={`
-              absolute left-0 bottom-0 h-0.5 bg-[#47b8ab] transition-all duration-300
+              absolute left-0 bottom-0 h-0.5 bg-blue-300 transition-all duration-300
               ${isActive(item.href) ? "w-full" : "w-0 group-hover:w-full"}
             `}
           />
