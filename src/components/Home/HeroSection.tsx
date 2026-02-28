@@ -2,7 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroImg from "@/public/images/hero/hero.jpg";
 import { Download } from "lucide-react";
-
+import Brand1 from "@/public/images/hero/Bfdc.jpeg"
+import Brand2 from "@/public/images/hero/Food.jpeg"
+import Brand3 from "@/public/images/hero/krishi.png"
+import Brand4 from "@/public/images/hero/starship-condensed-milk-397-gm.jpg.jpeg"
 
 export default function HeroSection() {
   return (
@@ -64,20 +67,48 @@ export default function HeroSection() {
 
               {/* Secondary Button */}
               <Link
-  href="https://drive.google.com/uc?export=download&id=1eIXHHoC_EZn7U_7nWxthJgZgPb4GjIqP"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 
+                href="https://drive.google.com/uc?export=download&id=1eIXHHoC_EZn7U_7nWxthJgZgPb4GjIqP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 
   bg-white hover:bg-blue-50 
   text-gray-900 font-semibold rounded-xl 
   border border-blue-200 hover:border-blue-400
   transition-all duration-300 text-sm md:text-base"
->
-  <Download className="w-5 h-5" />
-  Download Our Brochure
-</Link>
-
+              >
+                <Download className="w-5 h-5" />
+                Download Our Brochure
+              </Link>
             </div>
+            {/* Trusted By Section */}
+<div className="mt-6 md:mt-8">
+  <p className="text-xs md:text-xl text-gray-700 mb-3">
+    Trusted by leading companies
+  </p>
+
+  <div className="flex items-center gap-4 md:gap-6 flex-wrap">
+    <Image
+      src={Brand1}
+      alt="Company 1"
+      className="h-6 md:h-15 w-auto object-contain opacity-70 hover:opacity-100 transition"
+    />
+    <Image
+      src={Brand2}
+      alt="Company 2"
+      className="h-6 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition"
+    />
+    <Image
+      src={Brand3}
+      alt="Company 3"
+      className="h-6 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition"
+    />
+    <Image
+      src={Brand4}
+      alt="Company 4"
+      className="h-6 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition"
+    />
+  </div>
+</div>
           </div>
 
           {/* Right Image */}
