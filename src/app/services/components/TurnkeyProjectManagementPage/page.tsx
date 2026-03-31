@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TurnkeyImg from "@/public/images/services/turnkey project.jpg";
+import TurnkeyImg from "@/public/images/services/Industrial-Process-Turnkey-Projects.jpg";
 import Link from "next/link";
 
 export default function TurnkeyProjectManagementPage() {

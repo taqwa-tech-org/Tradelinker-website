@@ -181,6 +181,7 @@ export default function Footer() {
                                   href="https://bd.linkedin.com/company/tradelinkers"
                                   className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
                                   aria-label="LinkedIn"
+                                  target="_blank"
                               >
                                   <svg
                                       className="w-5 h-5 text-white"
@@ -194,6 +195,7 @@ export default function Footer() {
                                   href="https://www.facebook.com/tlebd"
                                   className="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
                                   aria-label="Facebook"
+                                  target="_blank"
                               >
                                   <svg
                                       className="w-5 h-5 text-white"

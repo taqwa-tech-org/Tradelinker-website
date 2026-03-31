@@ -44,11 +44,11 @@ export default function DairyIndustrySection() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Dairy Industry Solutions
+            Dairy & Ice Cream Industry Solutions
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
-            We provide advanced engineering solutions for the dairy industry,
+            We provide advanced engineering solutions for the dairy & Ice Cream industry,
             ensuring hygiene, efficiency, and compliance with international
             standards across the entire production chain.
           </p>
@@ -78,7 +78,7 @@ export default function DairyIndustrySection() {
           <div className="relative w-full h-[450px] rounded-2xl overflow-hidden shadow-xl">
             <Image
               src={milkImg}
-              alt="Dairy Industry Solutions"
+              alt="Dairy & Ice Cream Industry Solutions"
               fill
               className="object-cover"
               priority
