@@ -18,7 +18,7 @@ export default function Navbar() {
             
             {/* Logo */}
             {/* <Logo /> */}
-            <Image src={logo} alt="company logo" height={1500} width={150}/>
+            <Image src={logo} alt="company-logo" height={1500} width={150}/>
             {/* Desktop Nav */}
             <div className="hidden lg:block mr-6">
               <NavLinks />

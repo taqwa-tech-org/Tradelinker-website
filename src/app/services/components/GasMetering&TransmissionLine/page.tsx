@@ -1,46 +1,51 @@
 import Image from "next/image";
+import GasMeteringImg from "@/public/images/services/gas-metering.jpg";
 import Link from "next/link";
-import HvacImg from "@/public/images/services/hvac-image.jpg";
 
-export default function HVACServicePage() {
+export default function GasMeteringTransmissionPage() {
     return (
-        <main className="">
+        <main>
             {/* Overview */}
             <section className="py-12">
                 <div className="max-w-5xl mx-auto px-4 text-center">
                     <h2 className="text-3xl font-semibold mb-4 text-blue-900">
-                        Reliable HVAC Engineering
+                        Gas Metering & Transmission Line
                     </h2>
                     <p className="text-black">
-                        We design, install, and maintain HVAC systems that
-                        ensure comfort, efficiency, and long-term performance
-                        for industrial and commercial projects.
+                        We design, install, and commission gas metering systems
+                        and transmission pipelines that ensure accurate
+                        measurement, safe distribution, and reliable long-term
+                        performance for industrial and commercial applications.
                     </p>
                 </div>
             </section>
 
             {/* Hero Section */}
-            <section className="relative w-full p-10 md:p-20 bg-blue-100 rounded-xl">
-                <div className="grid md:grid-cols-2 gap-10 items-center">
+            <section className="relative w-full p-10 md:p-20 rounded-xl bg-blue-100">
+                <div className="px-4 grid md:grid-cols-2 gap-10 items-center">
                     {/* Image */}
                     <div className="relative w-full h-64 md:h-80">
                         <Image
-                            src={HvacImg}
-                            alt="HVAC Service"
+                            src={GasMeteringImg}
+                            alt="Gas Metering & Transmission Line"
                             fill
                             className="object-cover rounded-xl shadow-md"
                             priority
                         />
                     </div>
 
+                    {/* Content */}
                     <div>
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
-                            HVAC Solutions
+                            Gas Metering &amp; Transmission Line
                         </h1>
 
                         <p className="text-black mb-6">
-                            Efficient heating, ventilation, and air conditioning
-                            solutions for industrial and commercial facilities.
+                            From pipeline engineering and metering station
+                            design to installation and commissioning, we deliver
+                            precise gas measurement and safe, efficient
+                            transmission infrastructure for industrial and
+                            energy sectors.
                         </p>
 
                         <Link
