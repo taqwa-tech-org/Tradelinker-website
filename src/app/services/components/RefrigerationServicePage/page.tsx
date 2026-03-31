@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import refigerator from "@/public/images/services/refrigarator.jpg";
+import refigerator from "@/public/images/services/industrial-Refrigeration Systems.webp";
 
 export default function RefrigerationServicePage() {
   return (
