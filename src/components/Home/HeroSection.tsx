@@ -113,7 +113,7 @@ export default function HeroSection() {
                                 <Image
                                     src={Brand5}
                                     alt="Company 1"
-                                    className="h-14 md:h-24 w-auto object-contain opacity-70 hover:opacity-100 transition"
+                                    className="h-12 md:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition"
                                 />
                                 <Image
                                     src={Brand6}
