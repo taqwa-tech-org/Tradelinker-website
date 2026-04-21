@@ -17,7 +17,7 @@ export default function CoreServicesSection() {
             title: "HVAC Systems",
             description:
                 "Design, supply, installation, and maintenance of efficient HVAC systems for industrial, commercial, and specialized facilities.",
-            image: "/images/services/hvac-image.jpg",
+            image: "/images/services/HVAC-Solutions.jpg",
             icon: (
                 <svg
                     className="w-8 h-8"
@@ -38,7 +38,7 @@ export default function CoreServicesSection() {
             title: "Refrigeration Systems",
             description:
                 "Complete industrial refrigeration solutions including cold storage, process cooling, and temperature-controlled environments.",
-            image: "/images/services/industrial-Refrigeration Systems.webp",
+            image: "/images/services/Refrigeration-Systems.jpg",
             icon: (
                 <svg
                     className="w-8 h-8"
@@ -80,7 +80,7 @@ export default function CoreServicesSection() {
             title: "Turnkey Project Management",
             description:
                 "End-to-end project management services covering design, procurement, construction, installation, and commissioning.",
-            image: "/images/services/Industrial-Process-Turnkey-Projects.jpg",
+            image: "/images/services/Turnkey-Project.avif",
             icon: (
                 <svg
                     className="w-8 h-8"
