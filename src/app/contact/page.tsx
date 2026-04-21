@@ -1,4 +1,50 @@
-export default function contact (){
+"use client";
+import { useState } from "react";
+
+export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+        website: "", // honeypot
+    });
+    const [status, setStatus] = useState<
+        "idle" | "loading" | "success" | "error"
+    >("idle");
+    const [errorMsg, setErrorMsg] = useState("");
+
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    ) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus("loading");
+        setErrorMsg("");
+
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+            const data = await res.json();
+
+            if (data.success) {
+                setStatus("success");
+                setFormData({ name: "", email: "", message: "", website: "" });
+            } else {
+                setStatus("error");
+                setErrorMsg(data.error || "Something went wrong.");
+            }
+        } catch {
+            setStatus("error");
+            setErrorMsg("Network error. Please try again.");
+        }
+    };
+
     return (
         <section className="py-10 md:py-30">
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
@@ -51,11 +97,18 @@ export default function contact (){
                         </p>
                     </div>
                 </div>
-                <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+                <form
+                    onSubmit={handleSubmit}
+                    className="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
+                >
                     <label className="block">
                         <span className="mb-1">Full name</span>
                         <input
                             type="text"
+                            name="name"
+                            required
+                            value={formData.name}
+                            onChange={handleChange}
                             placeholder="Your Full Name"
                             className="block w-full border-1 p-1 md:px-3 md:py-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
                         />
@@ -64,6 +117,10 @@ export default function contact (){
                         <span className="mb-1">Email address</span>
                         <input
                             type="email"
+                            name="email"
+                            required
+                            value={formData.email}
+                            onChange={handleChange}
                             placeholder="Your Email Address"
                             className="block border-1 p-1 w-full md:px-3 md:py-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
                         />
@@ -71,16 +128,45 @@ export default function contact (){
                     <label className="block">
                         <span className="mb-1">Message</span>
                         <textarea
+                            name="message"
+                            required
+                            value={formData.message}
+                            onChange={handleChange}
                             placeholder="Write your message"
                             className="block w-full h-45 rounded-md border-1 p-1 md:px-3 md:py-4 focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"
                         ></textarea>
                     </label>
+
+                    {/* Honeypot — hidden from users, catches bots */}
+                    <input
+                        type="text"
+                        name="website"
+                        value={formData.website}
+                        onChange={handleChange}
+                        tabIndex={-1}
+                        autoComplete="off"
+                        style={{ position: "absolute", left: "-9999px" }}
+                        aria-hidden="true"
+                    />
+
                     <button
-                        type="button"
-                        className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-blue-500 text-white"
+                        type="submit"
+                        disabled={status === "loading"}
+                        className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-blue-500 text-white disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                        Submit
+                        {status === "loading" ? "Sending..." : "Submit"}
                     </button>
+
+                    {status === "success" && (
+                        <p className="text-center text-green-600 font-medium">
+                            ✓ Message sent! We'll get back to you soon.
+                        </p>
+                    )}
+                    {status === "error" && (
+                        <p className="text-center text-red-600 font-medium">
+                            {errorMsg}
+                        </p>
+                    )}
                 </form>
             </div>
         </section>

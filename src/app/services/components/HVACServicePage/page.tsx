@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import HvacImg from "@/public/images/services/hvac-image.jpg";
+import HvacImg from "@/public/images/services/HVAC-Solutions.jpg";
 
 export default function HVACServicePage() {
     return (
