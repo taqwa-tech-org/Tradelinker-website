@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GasMeteringImg from "@/public/images/services/Gas-Metering.jpg";
+import GasMeteringImg from "@/public/images/services/gas-metering.jpg";
 import Link from "next/link";
 
 export default function GasMeteringTransmissionPage() {
