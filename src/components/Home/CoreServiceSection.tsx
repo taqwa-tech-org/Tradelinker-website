@@ -80,7 +80,7 @@ export default function CoreServicesSection() {
             title: "Turnkey Project Management",
             description:
                 "End-to-end project management services covering design, procurement, construction, installation, and commissioning.",
-            image: "/images/services/Turnkey-Project.avif",
+            image: "/images/services/Industrial-Process-Turnkey-Projects.jpg",
             icon: (
                 <svg
                     className="w-8 h-8"
