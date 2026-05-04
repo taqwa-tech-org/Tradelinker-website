@@ -37,7 +37,8 @@ export default function CompanyIntroSection() {
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
                       Complete Engineering Solutions from Industrial &
                       Commercial Refrigeration, Cold Storage, Food Processing,
-                      Gas Metering to Bulk Grain Handling Facilities
+                      Gas Metering, Petrochemical & Trasmission line to Bulk
+                      Grain Handling Facilities
                   </h2>
 
                   <div className="w-20 h-1 bg-blue-500 mx-auto mb-8 rounded-full"></div>
@@ -51,8 +52,9 @@ export default function CompanyIntroSection() {
                       commissioning. Our solutions meet international standards
                       while ensuring operational efficiency, safety, and
                       long-term reliability for cold storage, dairy & ice-cream
-                      processing, seafood facilities, gas metering and bulk
-                      grain handling operations.
+                      processing, seafood facilities, gas metering,
+                      Petrochemical & Trasmission line and bulk grain handling
+                      operations.
                   </p>
               </div>
 
